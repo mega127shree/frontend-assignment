@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 :root{
     --header:#676262;
@@ -8,6 +8,9 @@
     --dash-hover:rgba(221, 221, 223, 0.6);
     --svg-right:#736060;
     --icon-sub-hover-bg:#2196f3ad;
+    --second-grid-p:#a5a3a3;
+    --heading-color:rgba(76, 78, 100, 0.87);
+    --button-bg:#A738A7;
 }
 
 body{
@@ -277,36 +280,86 @@ svg{
 .nav-icons{
     display: none;
 }
+.second-grid-main{
+    overflow-x: hidden;
+    background-color: #f1ecec;
+     
+}
+/* seller of month */
+.grid{
+   border-radius:12px;
+   background-color: var(--white);
+   width:400px;
+   height: 180px;
+   margin:30px 0 0 35px;
+
+}
+.h3{
+   font-weight: 700;
+   margin-left: 20px;
+   margin-top: 0.6rem;
+  color:var(--heading-color); 
+   font-size: 21px; 
+   margin-bottom: 0;
+   padding-top: 10px;
+}
+.sales h3{
+    color:var(--button-bg);;
+    font-size:1.5rem;
+    margin-bottom: 0.7rem;
+    margin-top: 0;
+    margin-left: 1.4rem;
+}
+.button{
+    margin-left: 1.25rem;
+    color:white;
+    background-color: var(--button-bg);;
+    padding:0.5rem 0.7rem;
+    border-radius: 6px;
+    border:none;
+}
+.h4{
+    font-size:12px;
+    padding: 0 0.3rem;
+    margin: 0;
+}
 /* sales overview  */
+
 .sales-Overview{
-    font-family: 'Open Sans', sans-serif;
-    position: absolute;
-    top:40px;
-    margin-left: 300px;
-    border:2px solid var(--para);
+    margin:30px 0 0 35px;
+    background-color: var(--white);
+     height: 180px;
     border-radius: 12px;
-    width: 800px;
-    height: 200px;
+    width: 590px;
+   
     
 
 }
-
-.header h1{
-    font-size: 1.25rem;
-    letter-spacing: 0.02rem;
-    color: rgba(76, 78, 100, 0.87);  
-    font-weight: 700;
-    padding: 1.7rem 1.5rem 0.5rem 1.5rem;
-}
-.header > svg{
+.three-dot{
     margin-right: 0.8rem;
+    margin-top: 1rem;
 }
- 
+.user{
+    margin-top: 2rem;
+}
 .total{
     padding-left:1.5rem;
-    color:var(--dash-text-p);
+    color:var(--second-grid-p);
     font-weight: 400;
-    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0.4rem;
+}
+.total > span{
+   color:var(--heading-color);
+   font-weight:700 ;
+}
+.text-style-p{
+     margin: 0.2rem 0 0 0.4rem;
+     color:var(--second-grid-p);
+}
+.text-style-h3{
+    margin: 0.2rem 0 0 0.4rem;
+    padding-top: 0;
 }
 .font{
     font-size: 2.2rem;
@@ -314,22 +367,27 @@ svg{
     padding: 0;
 }
 .svg-style{
-    padding:1rem;
-    border-radius: 12px;
-    height:65px;
+    padding:0.5rem;
+    height:50px;
+    border-radius: 6px;
+     
 }
 .user-svg{
-     background: #c599c5;
-     margin-left: 6px;
-     margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.4rem;
+   
+     
 } 
-.user-text p{
-    color:var(--dash-text-p);
+.svg-bg{
+    background: #4bdf4b;
+   
 }
-.user-text h3{
-    color: rgba(76, 78, 100, 0.87); 
-    font-weight: 500;
+.user-text{
+    margin-left: 0.7rem;
 }
+
 .profit{
     background-color: #f3daab;
     margin-left: 5rem;
@@ -340,9 +398,26 @@ svg{
     margin-left: 5rem;
     margin-right: 15px;
 }
+.week_earning_graphs{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(250px,1fr));
+    margin: 30px 0 0 35px;
+   
+}
+.weekly_overview{
+    background-color: var(--white);
+    border-radius: 6px;
+    width: 400px;
 
-
-
+}
+.bar-graph{
+    width: 90%;
+    margin: 1rem 0;
+}
+.performance{
+    margin:0.1rem;
+    padding: 0;
+}
 @media screen and (max-width:1200px){
     .main{
         display: none;
@@ -380,7 +455,10 @@ svg{
     .sub > div > div > span{
         display: block;
     }
-    
+    .sales h4{
+        
+        font-size: 12px;
+    }
      
 }
  
