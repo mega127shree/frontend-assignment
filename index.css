@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400,500,600,700&display=swap');
+:root{
+    --para:rgba(190,192,216,0.6);
+}
+body{
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
+    width: 95%;
+    height: 100vh;
+    margin: 1rem 0 0 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 70% auto;
+    margin-top: 1rem;
+}
+.left-section{
+    width: 90%;
+    border-right:1px solid var(--para); 
+}
+svg{
+    margin: 0 0.5rem 0 2rem;
+}
+nav{
+    display: flex;
+    align-items: center;
+    
+}
+nav h1{
+    margin:1rem;
+    font-weight: bold;
+    color:#676262;
+    font-size:25px;
+    letter-spacing: 0.05rem;
+}
+.images-section{
+  position: relative;
+ 
+}
+.images-section img:first-child{
+      width: 70%;
+      position: absolute;
+      left:11rem;
+      z-index: 1;
+}
+.images-section img:last-child{
+    position: absolute;
+    top:300px;
+    width: 100%;
+    
+}
+.form-section{
+    margin-top: 40px;
+}
+.form-text-section .p{
+    font-weight:bold;
+    color:#676262;
+    font-size:25px;
+    margin-top: 1.5rem;
+}
+.hand-wave-icon{
+    width: 25px;
+}
+.form-text-section p{
+    color: rgba(76, 78, 100, 0.6);
+    font-size: 0.87rem;
+    letter-spacing: 0.15px;
+    font-weight: 400;
+}
+.user-details{
+     background-color:rgb(212, 239, 250);
+     padding:0.3rem 1rem;
+     border-radius: 1rem;
+     margin-top: 2rem;
+}
+.user-details p{
+  color:rgb(38, 198, 249);
+}
+form{
+    margin-top: 2rem;
+    position: relative;
+}
+
+input[type=text],input[type=password]{
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height:50px;
+    width:100%;
+    font-size:18px;
+    padding-left: 0.7rem;
+
+}
+ 
+input[type=text]:focus ~ label{
+    color: rgb(74, 149, 179)!important;
+}
+ 
+.specific-style{
+    position: absolute;
+    left:15px;
+    color:rgba(76, 78, 100, 0.6);
+    font-size: 13px;
+    background-color: white;
+
+}
+ 
+.input-icons .icon{
+    position: absolute;
+    right:30px;
+    top:88px;
+}
+input[type=checkbox]{
+    margin-top: 1rem;
+}
+label{
+    color:rgba(76, 78, 100, 0.6);
+
+}
+.checkbox{
+    display:flex;
+    justify-content: space-between;
+}
+button{
+    width: 100%;
+    background-color:rgb(38, 198, 249) ;
+    color:white;
+    border:transparent;
+    outline:none;
+    border-radius:0.6rem;
+    box-shadow: 2px 2px 5px gray;
+    text-transform: uppercase;
+    padding:1rem;
+    
+}
+button a{
+    text-decoration: none;
+    color:white;
+}
+.platform{
+    display: flex;
+    margin-top: 1rem;
+
+}
+ hr{
+    width: 70px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+
+ }
+.createacc{
+    color:rgba(76, 78, 100, 0.6);
+    position: relative;
+    margin-left: 2rem;
+}
+ 
+.social-media{
+  margin-left: 100px; 
+}
+.social-media i{
+    padding:0.5rem;
+}
+
+
+@media screen and (max-width:1194px){
+    .grid-container{
+        grid-template-columns: 600px auto;
+    }
+    .images-section img:first-child{
+        width: 75%;
+        left:6rem;
+    }
+    .images-section img:last-child{
+        top:200px;
+        width: 100%;
+    }
+    .form-section{
+        margin:0.3rem 0.5rem;
+    }
+    .form-text-section .p{
+        margin: 1rem 0;
+    }
+    .social-media{
+        margin-left: 0px; 
+      }
+}
+@media screen and (max-width:900px){
+    body{
+        width: 100%;
+    }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        margin:0 0.5rem;
+    }
+    nav svg{
+        margin-top:1.5rem;
+    }
+    nav h1{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-left: 0.2rem;
+    }
+    .images-section{
+        display: none;
+    }
+   .left-section{
+    border:transparent;
+   }
+    .form-section{
+        margin:0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         
+    }
+    .form-text-section .p{
+        margin: 0;
+        line-height: 1.334;
+        letter-spacing: 0.18px;
+        color:rgba(76, 78, 100, 0.87);
+        font-weight: 600;
+        font-size:1.25rem;
+    } 
+    .checkbox > div{
+         padding:0.3rem;
+    }
+    .platform{
+        display: flex;
+        flex-direction: column;
+    }  
+    .platform p{
+        margin: 0;
+        padding-top: 1.3rem;
+    }
+    .social-media{
+        margin-top: 0.5rem;
+    }
+}
+
+ 
