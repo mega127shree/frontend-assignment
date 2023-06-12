@@ -281,7 +281,7 @@ svg{
     display: none;
 }
 .second-grid-main{
-    overflow-x: hidden;
+     
     background-color: #f1ecec;
      
 }
@@ -326,14 +326,11 @@ svg{
 /* sales overview  */
 
 .sales-Overview{
-    margin:30px 0 0 35px;
+    margin:30px 0 0 20px;
     background-color: var(--white);
      height: 180px;
     border-radius: 12px;
     width: 590px;
-   
-    
-
 }
 .three-dot{
     margin-right: 0.8rem;
@@ -376,18 +373,14 @@ svg{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 1.4rem;
-   
-     
+    margin-left: 1.4rem;  
 } 
 .svg-bg{
     background: #4bdf4b;
-   
 }
 .user-text{
     margin-left: 0.7rem;
 }
-
 .profit{
     background-color: #f3daab;
     margin-left: 5rem;
@@ -400,15 +393,13 @@ svg{
 }
 .week_earning_graphs{
     display: grid;
-    grid-template-columns: repeat(3,minmax(250px,1fr));
+    grid-template-columns: 400px 350px auto;
     margin: 30px 0 0 35px;
-   
 }
 .weekly_overview{
     background-color: var(--white);
     border-radius: 6px;
     width: 400px;
-
 }
 .bar-graph{
     width: 90%;
@@ -417,6 +408,36 @@ svg{
 .performance{
     margin:0.1rem;
     padding: 0;
+}
+.total_earning{
+    margin: 0 0 0 20px;
+    background-color: var(--white);
+    border-radius: 6px;
+}
+.logos{
+    margin-left: 20px;
+    margin-bottom: 2rem;
+}
+.react-with-text h4{
+    font-size: 16px;
+    margin: 0 0 0 0.5rem;
+}
+.values{
+    margin-right: 1.5rem;
+}
+.div1{
+    
+    width: 80px;
+    height:6px;
+    border-radius: 3px;
+}
+.div2{
+    
+    width: 20px;
+    height: 6px;
+    margin-left:-20px;
+   
+
 }
 @media screen and (max-width:1200px){
     .main{
